@@ -1,0 +1,274 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.padding-option {
+    padding: 80px 0px;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imgs/WhatsApp\ Image\ 2023-12-17\ at\ 13.49.06_b1162bb3.jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav .nav-ul li{
+    position: relative;
+}
+
+.nav-link a .active::after {
+    content: "";
+    position: absolute;
+    bottom:15%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    background-color: white;
+    width: 40px;
+    font-size: 20px;
+}
+
+.logo {
+    width: 70px;
+}
+
+
+nav .nav-ul li{
+    list-style: none;
+    margin-left: 40px;
+    display: inline-block;
+}
+
+nav .nav-ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 150px;
+    font-weight: 700px;
+    color: #fff;
+}
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 14px 50px;
+    border-radius: 50px;
+    margin: 20px;
+    transition: all 1s;
+}
+
+.content a:hover {
+    background-color: white;
+    color:#8E7754
+}
+
+.content p {
+    color: #fff;
+    font-size: 24px;
+}
+
+/*---------about--------*/
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.about .about-img {
+    width: 40%;
+    float: left;
+    padding: 0px 30px;
+    margin-bottom: 50px;
+}
+
+.about .about-img img {
+    width: 100%;
+}
+
+.about-content {
+    float: left;
+    width: 60%;
+    padding: 0px 30px;
+
+}
+
+.about-content h2 {
+    margin: 50px 0px;
+    color: #333333;
+}
+.about .icon i {
+    color: whitesmoke;
+    transition: all 0.5s;
+}
+
+.about .icon i:hover{
+    color:#8E7754;
+}
+
+.about-content p {
+    color: #555555;
+    line-height: 30px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    margin: 50px 0px;
+
+}
+
+.clr {
+    clear: both;
+}
+
+.about .about-img .overlay {
+    transform: translate(25px, 25px);
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.about .about-img .overlay:hover .overlay-about {
+    top: 0%;
+}
+
+.about .about-img .overlay-about {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.432);
+    transition: top 1s;
+
+}
+
+.about .container .about-content .list ul li {
+    list-style: none;
+    line-height: 40px;
+    color: #555555;
+    font-size: 18px;
+
+
+
+}
+
+.about .container .about-content .list ul li i {
+    color: #8E7754;
+    font-size: 24px;
+}
+
+/*----------Testimonials-------*/
+#testi .carousel-indicators [data-bs-target] {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+}
+
+#testi{
+    background-color: #8e7754ab;
+    
+}
+
+#testi .carousel-inner img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/*---------category-------*/
+.port-caption {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    opacity: 0;
+    transition: all 0.5s;
+    background-color: #8e7754cd;
+    color: whitesmoke;
+}
+
+.port-item:hover .port-caption {
+    opacity: 1;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link {
+    color: black;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bolder;
+    position: relative;
+
+}
+
+.nav-pills .nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    background-color: black;
+    width: 50px;
+}
+
+/*------contactus----*/
+#contact .contact-caption {
+    padding: 30px 0px;
+}
+
+#contact button {
+    transition: all 1s;
+    margin: 30px 0px;
+    padding: 10px 0px;
+}
+
+button:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+footer {
+    height: 80px;
+    background-color: #1c1c1c;
+}
+footer i{
+    transition: all 0.5s;
+}
+
+footer i:hover{
+    color: #8E7754;
+}
